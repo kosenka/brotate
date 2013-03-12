@@ -25,8 +25,20 @@ protected/
     └── ... другие модули
 ```
 
+* Прописать в конфиге приложения:
+```
+    'modules'=>array(
+                        'brotate'=>array(
+                                              'class' => 'application.modules.brotate.BRotateModule',
+                                              'ips'=>array(
+                                                           'XX.XXX.XXX.XX',  //с каких IP-адресов разрешено управлять
+                                                           ),
+                                              'webFolder'=>'/upload/brotate/' // папка, куда закачивать баннеры
+                                             ),
+        ),
+```
+
 * Создать в базе данных таблицы (смотри файл data.sql)
-* 
 * Перейти по ссылке http://[ВАШ_САЙТ]/index.php?r=brotate/admin
 
 ## Заметки на будущее
