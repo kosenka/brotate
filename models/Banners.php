@@ -211,7 +211,7 @@ class Banners extends CActiveRecord
         	parent::afterDelete();
         	
         	$module = Yii::app()->getModule('brotate');
-                unlink(Yii::getPathOfAlias('webroot').$module->webFolder.$this->bnrFile);//стираем ее
+                @unlink(Yii::getPathOfAlias('webroot').$module->webFolder.$this->bnrFile);//стираем ее
                 
                 $cacheId=$this->getCacheId($this->cacheId);
                 Yii::app()->cache->delete($cacheId);//удаляем кеш
