@@ -1,4 +1,12 @@
 <?php
+/**
+ * Banner rotation module for Yii Framework.
+ *
+ * @author Vladimir Papaev <kosenka@gmail.com>
+ * @version 0.1
+ * @license http://www.opensource.org/licenses/bsd-license.php
+ */
+
 /*
 <script type="text/javascript">
 <!--
