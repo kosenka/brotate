@@ -53,7 +53,7 @@ protected/
 <script type="text/javascript">
 <!--
    document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
-   document.write ("=$this->createUrl('/brotate/default',array('rr'=>time()))");
+   document.write ("<?=$this->createUrl('/brotate/default',array('rr'=>time()));?>");
    if (document.referer)
       document.write ("&amp;referer=" + escape(document.referer));
    document.write ("'><" + "/script>");
