@@ -44,7 +44,7 @@ protected/
 ## ССылки
 
 * [Extension project page](https://github.com/kosenka/brotate)
-* [Russian community discussion thread](http://yiiframework.ru/forum/viewtopic.php?f=)
+* [Russian community discussion thread](http://yiiframework.ru/forum/viewtopic.php?f=9&t=11206)
 
 ## Использование
 В представлении/шаблоне прописать так:
