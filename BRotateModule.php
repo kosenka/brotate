@@ -5,6 +5,7 @@
  * @author Vladimir Papaev <kosenka@gmail.com>
  * @version 0.1
  * @license http://www.opensource.org/licenses/bsd-license.php
+ *
  */
 
 /*
