@@ -9,8 +9,7 @@ solution.
 
 ## Установка
 
-* Скачать ([zip](https://github.com/resurtm/EUppodPlayer/zipball/master),
-[tar.gz](https://github.com/resurtm/EUppodPlayer/tarball/master)).
+* Скачать ([zip](https://github.com/kosenka/brotate/zipball/master), [tar.gz](https://github.com/kosenka/brotate/tarball/master)).
 
 * Распаковать архив в папку `application.modules.brotate` . Должно получиться следующее:
 
@@ -26,9 +25,13 @@ protected/
     └── ... другие модули
 ```
 
-* You're ready to use!
+* Создать в базе данных таблицы (смотри файл data.sql)
+* 
+* Перейти по ссылке http://[ВАШ_САЙТ]/index.php?r=brotate/admin
 
-## Features and stuff to be implemented in future
+## Заметки на будущее
+
+* Сделать статистику показа баннеров
 
 ## ССылки
 
