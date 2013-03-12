@@ -1,4 +1,4 @@
-brotate
+BRotate
 =======
 
-BRotate
+Модуль ротации баннеров для Yii
