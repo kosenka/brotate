@@ -1,4 +1,4 @@
-BRotate for Yii Framework
+BRotate - Banner rotation module for Yii Framework
 =======
 
 ## Модуль ротации баннеров для Yii
@@ -13,6 +13,8 @@ solution.
 [tar.gz](https://github.com/resurtm/EUppodPlayer/tarball/master)).
 
 * Распаковать архив в папку `application.modules.brotate` . Должно получиться следующее:
+
+```
 protected/
 ├── components/
 ├── controllers/
@@ -28,26 +30,26 @@ protected/
 
 ## Features and stuff to be implemented in future
 
-Feel free to submit feature requests and feedback.
+## ССылки
 
-Available features:
-
-* Flash and HTML5 backends.
-* SWFObject integration.
-* Styles built with the constructor (available on the [official web site](http://uppod.ru/)).
-
-Features to be implemented in future:
-
-* Ability to specify RTMP URL.
-* Playlists.
-* Photo viewer.
-* ...
-
-## Links
-
-* [Uppod project web site](http://uppod.ru/)
-* [Extension project page](https://github.com/resurtm/EUppodPlayer)
-* [Russian community discussion thread](http://yiiframework.ru/forum/viewtopic.php?f=9&t=8818)
+* [Extension project page](https://github.com/kosenka/brotate)
+* [Russian community discussion thread](http://yiiframework.ru/forum/viewtopic.php?f=)
 
 ## Использование
 
+```php
+<script type="text/javascript">
+<!--
+   document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
+   document.write ("=$this->createUrl('/brotate/default',array('rr'=>time()))");
+   if (document.referer)
+      document.write ("&amp;referer=" + escape(document.referer));
+   document.write ("'><" + "/script>");
+//-->
+</script>
+```
+
+
+```php
+<?php $this->widget('application.modules.brotate.widget.BRotateWidget'); ?>
+```
