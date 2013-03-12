@@ -48,8 +48,7 @@ protected/
 //-->
 </script>
 ```
-
-
+или
 ```php
 <?php $this->widget('application.modules.brotate.widget.BRotateWidget'); ?>
 ```
