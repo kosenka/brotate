@@ -1,12 +1,6 @@
 BRotate - Banner rotation module for Yii Framework
 =======
 
-## Модуль ротации баннеров для Yii
-
-This is a wrapper extension for [Uppod](http://uppod.ru/) project. Uppod is a popular and simple in-browser video and
-audio player. It supports Flash and HTML5 video backends, pretty customizable, quite functional and ready to use
-solution.
-
 ## Установка
 
 * Скачать ([zip](https://github.com/kosenka/brotate/zipball/master), [tar.gz](https://github.com/kosenka/brotate/tarball/master)).
