@@ -2,42 +2,21 @@
 
 class AdminController extends CController
 {
-
-	/**
-	 * @return array action filters
-	 */
-        public function filters()
-        {
-                return array(
-                );
-        }
-
-        public function actions()
-        {
-                return array(
-                );
-        }
-
-	/**
-	 * Specifies the access control rules.
-	 * This method is used by the 'accessControl' filter.
-	 * @return array access control rules
-	 */
-	public function accessRules()
-        {
-		return array(
-			array('allow',
-				'actions'=>array('install','index','edit','update','stat'),
-				'users'=>array('@'),
-			),
-			array('deny',  // deny all users
-				'users'=>array('*'),
-			),
-		);
-	}
+        public $breadcrumbs;
 
 	protected function beforeAction()
 	{
+                if(!Yii::app()->user->checkAccess('Madmin.BRotate'))
+                        throw new CHttpException(403,'Forbidden');
+
+                if(isset($this->module->yiiBootstrap) and !empty($this->module->yiiBootstrap))
+                        Yii::app()->setComponent('bootstrap',Yii::createComponent(
+                                                                                  array(
+                                                                                        'class' => $this->module->yiiBootstrap,
+                                                                                        'responsiveCss' => true
+                                                                                       )
+                                                                                 ));
+
                 $disable = in_array(Yii::app()->user->name, $this->module->users);
                 foreach ($this->module->roles as $role)
                 {

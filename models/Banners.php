@@ -155,7 +155,7 @@ class Banners extends CActiveRecord
                 
                 $result=$this->dbConnection->createCommand("SELECT id,bnrTyp,bnrFile,bnrWidth,bnrHeight,bnrDescr,bnrUrl,bnrVisibleLimit,bnrViewedCurrent,bnrViewedTotal
                                                             FROM ".self::tableName()."
-                                                            WHERE bnrVisible=1 and bnrDefault=0 ".$txt_tag."
+                                                            WHERE bnrVisible=1 and bnrDefault in (0,1) ".$txt_tag."
                                                             order by bnrViewedCurrent asc
                                                             LIMIT 1")->queryRow(true);
 
